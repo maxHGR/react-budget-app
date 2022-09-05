@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from "react-bootstrap";
+import {Card} from "react-bootstrap";
 import { currencyFormatter } from "../utils";
 
-const BudgetCard = ({ name, amount, max }) => {
+export default function BudgetCard({ name, amount, max }) {
   return (
     <Card>
       <Card.Body>
@@ -17,4 +17,3 @@ const BudgetCard = ({ name, amount, max }) => {
   );
 };
 
-export default BudgetCard;
